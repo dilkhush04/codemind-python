@@ -1,0 +1,12 @@
+h,m=map(int,input().split(":"))
+ans=abs(30*h-5.5*m)
+if(ans<360-ans):
+    if(ans>(int)(ans)):
+        print(ans)
+    else:
+        print(ans)
+else:
+    if(360-ans>(int)(360-ans)):
+        print(360-ans)
+    else:
+        print(360-ans)
