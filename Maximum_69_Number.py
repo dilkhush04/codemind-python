@@ -1,20 +1,19 @@
 def number(n):
     num=0
-    while(n!=0):
+    while n!=0:
         num=num*10+n%10
-        n=n//10
+        n//=10
     return num
 n=int(input())
-n=number(n)
+s=0
 c=0
-num=0
+n=number(n)
 while(n!=0):
-    i=n%10
+    rem=n%10
     if(c==0):
-        if(i==6):
-            i=9
-            c=5
-    num=num*10+i
-    n=n//10
-print(num)
-    
+        if(rem==6):
+            rem=9
+            c=1
+    s=s*10+rem
+    n//=10
+print(s)
