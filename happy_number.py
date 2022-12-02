@@ -1,20 +1,19 @@
-def isHappyNumber(num):    
-    rem = sum = 0;    
-    while(num > 0):    
-        rem = num%10;    
-        sum = sum + (rem*rem);    
-        num = num//10;    
-    return sum;    
-        
-num = int(input());    
-result = num;    
-     
-while(result != 1 and result != 4):    
-    result = isHappyNumber(result);    
-     
-#Happy number always ends with 1    
-if(result == 1):    
-    print("True");    
-#Unhappy number ends in a cycle of repeating numbers which contain 4    
-elif(result == 4):    
-    print("False");   
+def happy(n):
+    s=0
+    while(n!=0):
+        rem=n%10
+        s+=rem*rem
+        n//=10
+    return s
+n=int(input())
+n=happy(n)
+while(1>0):
+    if n<10:
+        if n==1 or n==7:
+            print("True")
+            break
+        else:
+            print("False")
+            break
+    else:
+        n=happy(n)
