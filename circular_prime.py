@@ -24,6 +24,4 @@ if(n>1):
             print("prime but not a circular prime")
                 
         
-        
-
-            
+     
