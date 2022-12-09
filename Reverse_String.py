@@ -1,2 +1,5 @@
 s=input()
-print(s[::-1])
+s=s.split(" ")
+for i in range(len(s)-1,-1,-1):
+    print(s[i],end=' ')
+    
