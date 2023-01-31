@@ -11,5 +11,5 @@ else:
     res1=n%len(s)
     for i in range(res1):
         if s[i]=='a':
-            x=x+1
-    print(res*c+x)
+            x+=1
+    print((res*c)+x)
